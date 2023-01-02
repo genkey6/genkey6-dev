@@ -1,4 +1,5 @@
 ---
+language: 'ja'
 layout: '../../layouts/BlogPost.astro'
 title: '2022年の振り返り'
 description: 'review 2022'

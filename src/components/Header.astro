@@ -1,6 +1,8 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
+import { localizePath } from 'astro-i18next';
+import { LanguageSelector } from 'astro-i18next/components';
 ---
 
 <header>
@@ -8,8 +10,9 @@ import { SITE_TITLE } from '../config';
 		{SITE_TITLE}
 	</h2>
 	<nav>
-		<HeaderLink href="/">About</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
+		<HeaderLink href={localizePath('/')}>About</HeaderLink>
+		<HeaderLink href={localizePath('/blog')}>Blog</HeaderLink>
+		<LanguageSelector />
 	</nav>
 </header>
 <style>
