@@ -1,37 +1,37 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import i18next, { t, changeLanguage } from "i18next";
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+import i18next, { t, changeLanguage } from 'i18next';
 
-changeLanguage("ja");
+changeLanguage('ja');
 ---
 
 <!DOCTYPE html>
 <html lang={i18next.language}>
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>About me</h1>
-			<p><strong>Gen Shu (genkey6)</strong></p>
-			<p>{t('aboutMe.bio')}</p>
-			<p>{t('aboutMe.workHistory')}</p>
-			<h2>Favorite</h2>
-			<p>Programming Languages</p>
-			<ul>
-				<li>TypeScript</li>
-				<li>Rust</li>
-				<li>Python</li>
-			</ul>
-			<p>Hobbies</p>
-			<ul>
-				<li>Music (Piano, Synthesizer)</li>
-			</ul>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>About me</h1>
+      <p><strong>Gen Shu (genkey6)</strong></p>
+      <p>{t('aboutMe.bio')}</p>
+      <p>{t('aboutMe.workHistory')}</p>
+      <h2>Favorite</h2>
+      <p>Programming Languages</p>
+      <ul>
+        <li>TypeScript</li>
+        <li>Rust</li>
+        <li>Python</li>
+      </ul>
+      <p>Hobbies</p>
+      <ul>
+        <li>Music (Piano, Synthesizer)</li>
+      </ul>
+    </main>
+    <Footer />
+  </body>
 </html>
