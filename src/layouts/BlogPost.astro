@@ -2,58 +2,57 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { changeLanguage } from "i18next";
+import { changeLanguage } from 'i18next';
 
 export interface Props {
-	content: {
-		language: string;
-		title: string;
-		description: string;
-		pubDate?: string;
-		updatedDate?: string;
-	};
+  content: {
+    language: string;
+    title: string;
+    description: string;
+    pubDate?: string;
+    updatedDate?: string;
+  };
 }
 
 const {
-	content: { language, title, description, pubDate, updatedDate },
+  content: { language, title, description, pubDate, updatedDate },
 } = Astro.props;
 
 changeLanguage(language);
-
 ---
 
 <html lang={language}>
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			.title {
-				font-size: 2em;
-				margin: 0.25em 0 0;
-			}
-			hr {
-				border-top: 1px solid #ddd;
-				margin: 1rem 0;
-			}
-		</style>
-	</head>
+  <head>
+    <BaseHead title={title} description={description} />
+    <style>
+      .title {
+        font-size: 2em;
+        margin: 0.25em 0 0;
+      }
+      hr {
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
 
-	<body>
-		<Header />
-		<main>
-			<article>
-				<h1 class="title">{title}</h1>
-				{pubDate && <time>{pubDate}</time>}
-				{
-					updatedDate && (
-						<div>
-							Last updated on <time>{updatedDate}</time>
-						</div>
-					)
-				}
-				<hr />
-				<slot />
-			</article>
-		</main>
-		<Footer />
-	</body>
+  <body>
+    <Header />
+    <main>
+      <article>
+        <h1 class="title">{title}</h1>
+        {pubDate && <time>{pubDate}</time>}
+        {
+          updatedDate && (
+            <div>
+              Last updated on <time>{updatedDate}</time>
+            </div>
+          )
+        }
+        <hr />
+        <slot />
+      </article>
+    </main>
+    <Footer />
+  </body>
 </html>
