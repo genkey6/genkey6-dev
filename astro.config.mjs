@@ -3,12 +3,16 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import astroI18next from 'astro-i18next';
 
-import vercel from "@astrojs/vercel/serverless";
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://genkey6.dev',
   integrations: [astroI18next(), mdx(), sitemap()],
-  output: "server",
-  adapter: vercel()
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 });
