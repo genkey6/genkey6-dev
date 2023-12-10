@@ -9,6 +9,10 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   site: 'https://genkey6.dev',
   integrations: [astroI18next(), mdx(), sitemap()],
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja', 'en'],
+  },
   output: 'server',
   adapter: vercel({
     webAnalytics: {

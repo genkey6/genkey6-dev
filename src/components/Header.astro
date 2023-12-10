@@ -1,8 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../config';
-import { localizePath } from 'astro-i18next';
+import { getRelativeLocaleUrl } from 'astro:i18n';
 import { LanguageSelector } from 'astro-i18next/components';
+import i18next from "i18next";
 ---
 
 <header>
@@ -10,8 +11,8 @@ import { LanguageSelector } from 'astro-i18next/components';
     {SITE_TITLE}
   </h2>
   <nav>
-    <HeaderLink href={localizePath('/')}>About</HeaderLink>
-    <HeaderLink href={localizePath('/blog')}>Blog</HeaderLink>
+    <HeaderLink href={getRelativeLocaleUrl(i18next.language, "/")}>About</HeaderLink>
+    <HeaderLink href={getRelativeLocaleUrl(i18next.language, "/blog")}>Blog</HeaderLink>
     <LanguageSelector />
   </nav>
 </header>
