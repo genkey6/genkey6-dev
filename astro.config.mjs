@@ -15,7 +15,6 @@ export default defineConfig({
   },
   output: 'server',
   adapter: vercel({
-    includeFiles: ['public/locales/**/*'],
     webAnalytics: {
       enabled: true,
     },
