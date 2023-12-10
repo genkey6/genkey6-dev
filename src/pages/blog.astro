@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
-import { localizePath } from "astro-i18next";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import i18next, { changeLanguage } from "i18next";
 
 changeLanguage("ja");
@@ -53,7 +53,7 @@ const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort((a, b) => new Date(b.
                     }
                   )}
                 </time>
-                <a href={localizePath(post.url)}>{post.frontmatter.title}</a>
+                <a href={getRelativeLocaleUrl('ja', post.url)}>{post.frontmatter.title}</a>
               </li>
             ))
           }

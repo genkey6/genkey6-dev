@@ -3,13 +3,14 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
-import { localizePath } from "astro-i18next";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import i18next, { changeLanguage } from "i18next";
 
 changeLanguage("en");
 
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob("../blog/*.{md,mdx}")).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() -
+// patch work: changed `Astro.glob("../blog/*.{md,mdx}")` -> `Astro.glob("./blog/*.{md,mdx}")`
+const posts = (await Astro.glob("./blog/*.{md,mdx}")).sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() -
     new Date(a.frontmatter.pubDate).valueOf());
 ---
 
@@ -53,7 +54,7 @@ const posts = (await Astro.glob("../blog/*.{md,mdx}")).sort((a, b) => new Date(b
                     }
                   )}
                 </time>
-                <a href={localizePath(post.url)}>{post.frontmatter.title}</a>
+                <a href={getRelativeLocaleUrl('ja', post.url)}>{post.frontmatter.title}</a>
               </li>
             ))
           }
