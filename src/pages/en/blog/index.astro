@@ -1,6 +1,6 @@
 ---
 import BaseHead from "../../../components/BaseHead.astro";
-import Header from "../../../components/Header.astro";
+import HeaderWithLaunguageSelector from "../../../components/HeaderWithLanguageSelector.astro";
 import Footer from "../../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../../config";
 import { getCollection } from "astro:content";
@@ -39,7 +39,7 @@ const posts = postsEn.sort((a, b) => new Date(b.data.pubDate).valueOf() -
     </style>
   </head>
   <body>
-    <Header />
+    <HeaderWithLaunguageSelector />
     <main>
       <section>
         <ul>
