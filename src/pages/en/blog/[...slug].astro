@@ -1,0 +1,60 @@
+---
+import { changeLanguage } from "i18next";
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import Embed from "../../../components/Embed.astro";
+import { getPostEntries, type Post } from "../../../lib/posts";
+
+changeLanguage("en");
+
+export async function getStaticPaths() {
+    const posts = await getPostEntries();
+    return posts;
+}
+;
+type Props = Post["props"];
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<html lang={entry.data.language}>
+  <head>
+    <BaseHead title={entry.data.title} description={entry.data.description} />
+    <style>
+      .title {
+        font-size: 2em;
+        margin: 0.25em 0 0;
+      }
+      hr {
+        border-top: 1px solid #ddd;
+        margin: 1rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <article>
+        <h1 class="title">{entry.data.title}</h1>
+        {entry.data.pubDate && <time>{entry.data.pubDate}</time>}
+        {
+          entry.data.updatedDate && (
+            <div>
+              Last updated on <time>{entry.data.updatedDate}</time>
+            </div>
+          )
+        }
+        <hr />
+        <slot />
+      </article>
+      <Content
+        components={{
+          embed: Embed,
+        }}      
+      />
+    </main>
+    <Footer />
+  </body>
+</html>
