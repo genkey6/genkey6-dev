@@ -637,9 +637,9 @@
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
 "@extractus/oembed-extractor@^4.0.1":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@extractus/oembed-extractor/-/oembed-extractor-4.0.2.tgz#2d69cb348c702650c991519742bdfb0637e79037"
-  integrity sha512-bM/PewyNL38JnIeeAoYVd3thPn4a121itYNFh1FE0ozvoubTJoxc6uDi3O9uVYEPRX7d/tY2PKOs5Eiz8SSang==
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@extractus/oembed-extractor/-/oembed-extractor-4.0.3.tgz#2d7fa53e798822a577615e0d870230e3c389bf26"
+  integrity sha512-yrRJ6T7/QIy/+iFLuTxGANQ/e7hvSsVKd7v6vs9AGVKsfFJU9S1qY9tL+Lzz9po4XMvNYS0EdxdUm+sgc5SP0Q==
   dependencies:
     cross-fetch "^4.0.0"
 
