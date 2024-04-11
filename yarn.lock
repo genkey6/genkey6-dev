@@ -35,30 +35,6 @@
   resolved "https://registry.yarnpkg.com/@astrojs/internal-helpers/-/internal-helpers-0.4.0.tgz#4fd45cee40b8278c77ed64167970c401ccfe792b"
   integrity sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==
 
-"@astrojs/markdown-remark@4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-4.3.2.tgz#0d5cb79c57ae8546ac355076c54275bade2588c5"
-  integrity sha512-4Oa4VaYiBd0MatB+rWIU/0A8pZH/sK3c2QkRYb+OO2lPl+qzevJtWaZY8hAQc4qurIOlRdn6B6ofDAGhWw+DSg==
-  dependencies:
-    "@astrojs/prism" "^3.0.0"
-    github-slugger "^2.0.0"
-    hast-util-from-html "^2.0.0"
-    hast-util-to-text "^4.0.0"
-    import-meta-resolve "^4.0.0"
-    mdast-util-definitions "^6.0.0"
-    rehype-raw "^7.0.0"
-    rehype-stringify "^10.0.0"
-    remark-gfm "^4.0.0"
-    remark-parse "^11.0.0"
-    remark-rehype "^11.0.0"
-    remark-smartypants "^2.0.0"
-    shiki "^1.1.2"
-    unified "^11.0.4"
-    unist-util-remove-position "^5.0.0"
-    unist-util-visit "^5.0.0"
-    unist-util-visit-parents "^6.0.0"
-    vfile "^6.0.1"
-
 "@astrojs/markdown-remark@5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-5.0.0.tgz#e723584d7cc63bb698dbc140c0cd0ddebbfd82ac"
@@ -83,12 +59,36 @@
     unist-util-visit-parents "^6.0.0"
     vfile "^6.0.1"
 
-"@astrojs/mdx@^2.0.0":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/mdx/-/mdx-2.2.2.tgz#bf0ecd912bd41af372fccf8a76fbaae852ca2e31"
-  integrity sha512-5SIFtOctC813HFyqJwBf5TBvlT9sbiOOv+bdvzAoiBSab95dC7PZhss22EvUEx+897c81YoIZ4F9fg4ZkxBFIw==
+"@astrojs/markdown-remark@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/markdown-remark/-/markdown-remark-5.1.0.tgz#1d99b451fc73c5ef775d243057a80a66638cc5cf"
+  integrity sha512-S6Z3K2hOB7MfjeDoHsotnP/q2UsnEDB8NlNAaCjMDsGBZfTUbWxyLW3CaphEWw08f6KLZi2ibK9yC3BaMhh2NQ==
   dependencies:
-    "@astrojs/markdown-remark" "4.3.2"
+    "@astrojs/prism" "^3.1.0"
+    github-slugger "^2.0.0"
+    hast-util-from-html "^2.0.0"
+    hast-util-to-text "^4.0.0"
+    import-meta-resolve "^4.0.0"
+    mdast-util-definitions "^6.0.0"
+    rehype-raw "^7.0.0"
+    rehype-stringify "^10.0.0"
+    remark-gfm "^4.0.0"
+    remark-parse "^11.0.0"
+    remark-rehype "^11.0.0"
+    remark-smartypants "^2.0.0"
+    shiki "^1.1.2"
+    unified "^11.0.4"
+    unist-util-remove-position "^5.0.0"
+    unist-util-visit "^5.0.0"
+    unist-util-visit-parents "^6.0.0"
+    vfile "^6.0.1"
+
+"@astrojs/mdx@^2.0.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/mdx/-/mdx-2.3.0.tgz#e1519f700a0739893056766388637ffdd41a0999"
+  integrity sha512-8Lqr3kK1R6B3rukM71GSYTc4BHm5/j+UVdp7UEa18WHW/EVstmhKupabGUHj2Em2L/5AQdFMNmOBVkKzzcPO4g==
+  dependencies:
+    "@astrojs/markdown-remark" "5.1.0"
     "@mdx-js/mdx" "^3.0.0"
     acorn "^8.11.2"
     es-module-lexer "^1.4.1"
@@ -108,6 +108,13 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-3.0.0.tgz#c9443e4cbf435acf0b5adc2c627d9789991514e7"
   integrity sha512-g61lZupWq1bYbcBnYZqdjndShr/J3l/oFobBKPA3+qMat146zce3nz2kdO4giGbhYDt4gYdhmoBz0vZJ4sIurQ==
+  dependencies:
+    prismjs "^1.29.0"
+
+"@astrojs/prism@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@astrojs/prism/-/prism-3.1.0.tgz#1b70432e0b16fafda191ce780c2820822a55bc46"
+  integrity sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==
   dependencies:
     prismjs "^1.29.0"
 
@@ -839,10 +846,10 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.14.0.tgz#0bb7ac3cd1c3292db1f39afdabfd03ccea3a3d34"
   integrity sha512-aGg7iToJjdklmxlUlJh/PaPNa4PmqHfyRMLunbL3eaMO0gp656+q1zOKkpJ/CVe9CryJv6tAN1HDoR8cNGzkag==
 
-"@shikijs/core@1.2.4":
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.2.4.tgz#1b380fad8eaccc6bec4ab1c265d70413e66e8034"
-  integrity sha512-ClaUWpt8oTzjcF0MM1P81AeWyzc1sNSJlAjMG80CbwqbFqXSNz+NpQVUC0icobt3sZn43Sn27M4pHD/Jmp3zHw==
+"@shikijs/core@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@shikijs/core/-/core-1.3.0.tgz#5b93b51ddb8def1e3a1543107f9b5b0540f716f6"
+  integrity sha512-7fedsBfuILDTBmrYZNFI8B6ATTxhQAasUHllHmjvSZPnoq4bULWoTpHwmuQvZ8Aq03/tAa2IGo6RXqWtHdWaCA==
 
 "@types/acorn@^4.0.0":
   version "4.0.6"
@@ -2921,9 +2928,9 @@ hast-util-to-string@^3.0.0:
     "@types/hast" "^3.0.0"
 
 hast-util-to-text@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/hast-util-to-text/-/hast-util-to-text-4.0.0.tgz#7f33a45d0bf7981ead44e82d9d8d75f511b3642f"
-  integrity sha512-EWiE1FSArNBPUo1cKWtzqgnuRQwEeQbQtnFJRYV1hb1BWDgrAlBU0ExptvZMM/KSA82cDpm2sFGf3Dmc5Mza3w==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-to-text/-/hast-util-to-text-4.0.1.tgz#fed301f3d91600cc3a9b2d45b9012f63c76b9a2e"
+  integrity sha512-RHL7Vo2n06ZocCFWqmbyhZ1pCYX/mSKdywt9YD5U6Hquu5syV+dImCXFKLFt02JoK5QxkQFS0PoVdFdPXuPffQ==
   dependencies:
     "@types/hast" "^3.0.0"
     "@types/unist" "^3.0.0"
@@ -3045,10 +3052,10 @@ inline-style-parser@0.1.1:
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
   integrity sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==
 
-inline-style-parser@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.2.2.tgz#d498b4e6de0373458fc610ff793f6b14ebf45633"
-  integrity sha512-EcKzdTHVe8wFVOGEYXiW9WmJXPjqi1T+234YpJr98RiFYKHV3cdy1+3mkTE+KHTHxFFLH51SfaGOoUdW+v7ViQ==
+inline-style-parser@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.2.3.tgz#e35c5fb45f3a83ed7849fe487336eb7efa25971c"
+  integrity sha512-qlD8YNDqyTKTyuITrDOffsl6Tdhv+UC4hcdAVuQsK4IMQ99nSgd1MIA/Q+jQYoh9r3hVUXhYh7urSRmXPkW04g==
 
 internal-slot@^1.0.5:
   version "1.0.6"
@@ -4960,11 +4967,11 @@ shebang-regex@^3.0.0:
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
 shiki@^1.1.2:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.2.4.tgz#6160497463f3328d43223cc0199eaa4bdcbe4311"
-  integrity sha512-Q9n9jKiOjJCRPztA9POn3/uZXNySHDNKAsPNpmtHDcFyi6ZQhx5vQKZW3Nhrwn8TWW3RudSRk66zqY603EZDeg==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-1.3.0.tgz#3eda35cb49f6f0a98525e9da48fc072e6c655a3f"
+  integrity sha512-9aNdQy/etMXctnPzsje1h1XIGm9YfRcSksKOGqZWXA/qP9G18/8fpz5Bjpma8bOgz3tqIpjERAd6/lLjFyzoww==
   dependencies:
-    "@shikijs/core" "1.2.4"
+    "@shikijs/core" "1.3.0"
 
 side-channel@^1.0.4:
   version "1.0.4"
@@ -5193,11 +5200,11 @@ style-to-object@^0.4.0:
     inline-style-parser "0.1.1"
 
 style-to-object@^1.0.0:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-1.0.5.tgz#5e918349bc3a39eee3a804497d97fcbbf2f0d7c0"
-  integrity sha512-rDRwHtoDD3UMMrmZ6BzOW0naTjMsVZLIjsGleSKS/0Oz+cgCfAPRspaqJuE8rDzpKha/nEvnM0IF4seEAZUTKQ==
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-1.0.6.tgz#0c28aed8be1813d166c60d962719b2907c26547b"
+  integrity sha512-khxq+Qm3xEyZfKd/y9L3oIWQimxuc4STrQKtQn8aSDRHb8mFgpukgX1hdzfrMEW6JCjyJ8p89x+IUMVnCBI1PA==
   dependencies:
-    inline-style-parser "0.2.2"
+    inline-style-parser "0.2.3"
 
 suf-log@^2.5.3:
   version "2.5.3"
