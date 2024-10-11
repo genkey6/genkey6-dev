@@ -1673,9 +1673,9 @@ css-select@^5.1.0:
     nth-check "^2.0.1"
 
 css-selector-parser@^3.0.0:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/css-selector-parser/-/css-selector-parser-3.0.4.tgz#1cabd23f3d83ebd5a752c1c9e72a2f37f6d904fa"
-  integrity sha512-pnmS1dbKsz6KA4EW4BznyPL2xxkNDRg62hcD0v8g6DEw2W7hxOln5M953jsp9hmw5Dg57S6o/A8GOn37mbAgcQ==
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/css-selector-parser/-/css-selector-parser-3.0.5.tgz#9b636ebccf7c4bcce5c1ac21ae27de9f01180ae9"
+  integrity sha512-3itoDFbKUNx1eKmVpYMFyqKX04Ww9osZ+dLgrk6GEv6KMVeXUhUnp4I5X+evw+u3ZxVU6RFXSSRxlTeMh8bA+g==
 
 css-what@^6.1.0:
   version "6.1.0"
@@ -2848,9 +2848,9 @@ hast-util-raw@^9.0.0:
     zwitch "^2.0.0"
 
 hast-util-select@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/hast-util-select/-/hast-util-select-6.0.2.tgz#f1e6c583ab6227cb510383471328734342bd1d1c"
-  integrity sha512-hT/SD/d/Meu+iobvgkffo1QecV8WeKWxwsNMzcTJsKw1cKTQKSR/7ArJeURLNJF9HDjp9nVoORyNNJxrvBye8Q==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/hast-util-select/-/hast-util-select-6.0.3.tgz#d30471b26efc88ae8a126ec36cd8ee6420fe3839"
+  integrity sha512-OVRQlQ1XuuLP8aFVLYmC2atrfWHS5UD3shonxpnyrjcCkwtvmt/+N6kYJdcY4mkMJhxp4kj2EFIxQ9kvkkt/eQ==
   dependencies:
     "@types/hast" "^3.0.0"
     "@types/unist" "^3.0.0"
@@ -2862,7 +2862,6 @@ hast-util-select@^6.0.2:
     hast-util-has-property "^3.0.0"
     hast-util-to-string "^3.0.0"
     hast-util-whitespace "^3.0.0"
-    not "^0.1.0"
     nth-check "^2.0.0"
     property-information "^6.0.0"
     space-separated-tokens "^2.0.0"
@@ -2943,9 +2942,9 @@ hast-util-to-parse5@^8.0.0:
     zwitch "^2.0.0"
 
 hast-util-to-string@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/hast-util-to-string/-/hast-util-to-string-3.0.0.tgz#2a131948b4b1b26461a2c8ac876e2c88d02946bd"
-  integrity sha512-OGkAxX1Ua3cbcW6EJ5pT/tslVb90uViVkcJ4ZZIMW/R33DX/AkcJcRrPebPwJkHYwlDHXz4aIwvAAaAdtrACFA==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-to-string/-/hast-util-to-string-3.0.1.tgz#a4f15e682849326dd211c97129c94b0c3e76527c"
+  integrity sha512-XelQVTDWvqcl3axRfI0xSeoVKzyIFPwsAGSLIsKdJKQMXDYJS4WYrBNF/8J7RdhIcFI2BOHgAifggsvsxp/3+A==
   dependencies:
     "@types/hast" "^3.0.0"
 
@@ -4200,11 +4199,6 @@ node-releases@^2.0.18:
   version "2.0.18"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.18.tgz#f010e8d35e2fe8d6b2944f03f70213ecedc4ca3f"
   integrity sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==
-
-not@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/not/-/not-0.1.0.tgz#c9691c1746c55dcfbe54cbd8bd4ff041bc2b519d"
-  integrity sha512-5PDmaAsVfnWUgTUbJ3ERwn7u79Z0dYxN9ErxCpVJJqe2RK0PJ3z+iFUxuqjwtlDDegXvtWoxD/3Fzxox7tFGWA==
 
 nth-check@^2.0.0, nth-check@^2.0.1:
   version "2.1.1"
