@@ -35,6 +35,6 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "prettier": "^3.0.0",
     "prettier-plugin-astro": "^1.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^7.0.0"
   }
 }
